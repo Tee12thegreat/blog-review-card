@@ -1,0 +1,94 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--Yellow);
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    padding: 16px;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid; /* Added border style */
+    border-color: var(--Gray950);
+    border-radius: 9px;
+    background-color: var(--White);
+    box-shadow:10px 10px var(--Gray950);
+}
+
+.container img {
+    border-radius: 9px; /* Round the corners of the image */
+    width: 100%;
+    height: auto;
+}
+
+.box {
+    margin-top: 10px;
+    width: 15vh; /* Width of the box */
+    height: 6vh; /* Height of the box */
+    border-style: solid; /* Border style for the box */
+    background-color: var(--Yellow);
+    border-radius: 8px; /* Rounded corners for the box */
+}
+
+.strong {
+    display: block; /* Ensure it behaves like a block element */
+    text-align: justify;
+}
+
+.paragraph {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within this container */
+    text-align: left;
+}
+.author{
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+    text-align: left;
+    align-content: flex-start;
+}
+
+.icon {
+    width: 50px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the image and text */
+    border-radius: 9px; /* Round corners of the icon image */
+}
+.p{
+    text-align: left;
+}
+/* Mobile Responsiveness */
+@media screen and (max-width: 375px) {
+    .container {
+        width: 85%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+}
